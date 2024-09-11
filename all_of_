@@ -1,0 +1,11 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+int main(){
+    vector<int> vc={1,2,3,4};
+   bool all_even= all_of(vc.begin(),vc.end(),[](int num){ return num%2==0;});
+    cout<<all_even;
+    
+    return 0;
+}
