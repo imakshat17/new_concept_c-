@@ -10,11 +10,11 @@ int main() {
  for(it=vec.begin();it!=vec.end();it++){
         cout<<(*it)<<endl;
  }
- // gcc 11+
- cout<<"****************"<<endl;
-  for(int it :vec){
-       cout<<it<<endl;
-  }
+  cout<<"Reverse Iterator"<<endl;
+  vector<int>:: reverse_iterator rit;
+   for(rit=vec.rbegin();rit!=vec.rend();rit++){
+           cout<<(*rit)<<endl;
+   }
 
     return 0;
 }
